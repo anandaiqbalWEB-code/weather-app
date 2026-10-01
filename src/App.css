@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(to right bottom, rgb(4, 124, 180), rgb(132, 236, 240))
+}
+
+#root {
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+
+.app {
+  position: relative;
+}
+
+.weather-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  width: 444px;
+  margin-bottom: 22px;
+
+  & input,
+  & button {
+    font-size: 22px;
+    padding-inline: 8px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  & input {
+    width: 100%;
+  }
+
+  & button {
+    padding: 10px;
+  }
+}
+
+.weather-card {
+  position: relative;
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  padding: 22px;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  & .lokasi-cuaca h2 {
+    color: gray;
+    font-size: 33px;
+    font-weight: bold;
+  }
+
+  & .weather-icon {
+    font-size: 70px;
+    margin-bottom: 22px;
+  }
+
+  & .temperature {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  & .condition {
+    font-size: 22px;
+    font-weight: 333;
+  }
+
+  & hr {
+    width: 100%;
+  }
+
+  & .weather-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+}
